@@ -2,7 +2,7 @@
 
 This repository contains software and data for "DeepCausalPV: A Transformer-based Causal Inference Framework for Enhancing Pharmacovigilance".
 The paper describes an innovative causal inference model – DeepCausalPV, by integrating the A Lite Bidirectional Encoder Representations from Transformers (ALBERT)
- and Judea Pearl’s Do-calculus to establish potential causality in pharmacovigilance. Do-calculus mechanism has been enrolled in this software.
+ and Judea Pearl’s Do-calculus to establish potential causality in pharmacovigilance. Do-calculus mechanism has been implement in this package.
 
 This software builds on
 1. ALBERT: [github.com/google-research/albert](https://github.com/google-research/albert);
