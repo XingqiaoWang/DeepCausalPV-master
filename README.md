@@ -38,7 +38,7 @@ Finally, you'll run `./Analgesics-induced_acute_liver_failure/run_casual_inferen
 
 # Reproducing the Tramadol-related_mortalities experiment
 
-instructions for running the experiments are essentially the same as for Analgesics-induced acute liver failure
+Instructions for running the experiments are essentially the same as for Analgesics-induced acute liver failure
 
 
 
