@@ -2,10 +2,11 @@
 
 This repository contains software and data for "DeepCausalPV: A Transformer-based Causal Inference Framework for Enhancing Pharmacovigilance".
 The paper describes an innovative causal inference model – DeepCausalPV, by integrating the A Lite Bidirectional Encoder Representations from Transformers (ALBERT)
- and Judea Pearl’s Do-calculus to establish potential causality in pharmacovigilance. 
+ and Judea Pearl’s Do-calculus to establish potential causality in pharmacovigilance. Do-calculus mechanism has been enrolled in this software.
 
 This software builds on
-1. ALBERT: [github.com/google-research/albert](https://github.com/google-research/albert), 
+1. ALBERT: [github.com/google-research/albert](https://github.com/google-research/albert);
+2. And Judea Pearl’s Do-calculus. 
 
 
 # Requirements and setup
@@ -28,17 +29,25 @@ For convience, you can get the dataset from https://drive.google.com/file/d/1VIg
 
 The default settings for the code match the settings used in the software.
 
-You'll run from `src` code as 
+1. You'll run from `src` code as 
 `./Analgesics-induced_acute_liver_failure/data_processing.sh`
-Before doing this, you'll need to put the datset.csv file to dat/Analgesics-induced_acute_liver_failure/dataset/ directory.
-Then you'll run `./Analgesics-induced_acute_liver_failure/run_ALBERT.sh`
-Before doing this, you'll need to change 'ALBERT_BASE_DIR=../ALBERT/model' to 'ALBERT_BASE_DIR=[PATH to ALBERT MODEL]'
-Finally, you'll run `./Analgesics-induced_acute_liver_failure/run_casual_inference.sh`, and you can find the causal results csv files in the 'dat/Analgesics-induced_acute_liver_failure\causal_result'
+Before doing this, you'll need to put the datset.csv file to `dat/Analgesics-induced_acute_liver_failure/dataset/` directory.
+2. Then you'll run `./Analgesics-induced_acute_liver_failure/run_ALBERT.sh`
+Before doing this, you'll need to change `ALBERT_BASE_DIR=../ALBERT/model` to `ALBERT_BASE_DIR=[PATH to ALBERT MODEL]`
+3. Finally, you'll run `./Analgesics-induced_acute_liver_failure/run_casual_inference.sh`, and you can find the causal results csv files in the `dat/Analgesics-induced_acute_liver_failure\causal_result`
 
 
 # Reproducing the Tramadol-related_mortalities experiment
 
-Instructions for running the experiments are essentially the same as for Analgesics-induced acute liver failure
+1. You'll run from `src` code as 
+`./Tramadol-related mortalities/data_processing.sh`
+Before doing this, you'll need to put the datset.csv file to `dat/Tramadol-related mortalities/dataset/` directory.
+2. Then you'll run `./Analgesics-induced_acute_liver_failure/run_ALBERT.sh`
+Before doing this, you'll need to change `ALBERT_BASE_DIR=../ALBERT/model` to `ALBERT_BASE_DIR=[PATH to ALBERT MODEL]`
+3. Finally, you'll run `./Analgesics-induced_acute_liver_failure/run_casual_inference.sh`, and you can find the causal results csv files in the `dat/Analgesics-induced_acute_liver_failure\causal_result`
+
+# Other FAERS dataset
+Instructions for running other experiments are essentially the same as for Analgesics-induced acute liver failure
 
 
 
